@@ -4,6 +4,9 @@ import streamlit as st
 from chat import chat_page
 from rag import rag_page
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 if __name__ == '__main__':
     st.set_page_config(

@@ -15,8 +15,9 @@ import csv
 config = dotenv_values(".env")
 
 
-os.environ["QIANFAN_AK"] = "rYndCW8UyNrh7ZIxAmxG0w1X"
-os.environ["QIANFAN_SK"] = "KovKWoaJeKYeIQwLgOUxFof5KI1ggTRq"
+# 设置 Qianfan 的 AK 和 SK 环境变量
+os.environ["QIANFAN_AK"] = "G5NhjZhLEdw53lVZKeQM3eaD"
+os.environ["QIANFAN_SK"] = "Hxkgkd6iee9FMLVucKnTUNg59jw3JDWK"
 embeddings=QianfanEmbeddingsEndpoint(model='bge-large-zh')
 
 def rag_page():
